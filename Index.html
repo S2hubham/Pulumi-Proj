@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stranger Things</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <style>
+    section{
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand" href="#intro">
+        <span class="text-secondary fw-bold">
+          <i class="bi bi-book-half"></i>
+          Stranger Things
+        </span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#topics">About Stranger Things</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Stranger Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Hawkins</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#pricing">Purchase</a>
+          </li>
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-secondary" href="#pricing">Purchase Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- main image & intro text -->
+<section id="intro">
+  <div class="container-lg">
+    <div class="row g-4 justify-content-center align-items-center">
+      <div class="col-md-5 text-center text-md-start">
+        <h1>
+          <div class="display-2">Stranger Code</div>
+          <div class="display-5 text-muted">Master the Upside Down</div>
+        </h1>
+        <p class="lead my-4 text-muted">Crack the code of the unknown, dive deep into the eerie world of programming where mysteries lurk at every turn.</p>
+        <a href="#pricing" class="btn btn-secondary btn-lg">Enter the Upside Down</a>
+        <!-- open sidebar / offcanvas -->
+        <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+          Unveil More Dark Secrets
+        </a>
+      </div>
+      <div class="col-md-5 text-center d-none d-md-block">
+        <!-- tooltip -->
+        <span class="tt" data-bs-placement="bottom" title="Stranger Code Book Cover">
+          <img src="assets/cover-book.jpg" class="img-fluid" alt="The Upside Down Guide">
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pricing plans -->
+<section id="pricing" class="bg-light mt-5">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>Enter the Upside Down</h2>
+      <p class="lead text-muted">Choose your path… but beware the darkness lurking within.</p>
+    </div>
+
+    <div class="row my-5 g-0 align-items-center justify-content-center">
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card border-0">
+          <div class="card-body text-center py-4">
+            <h4 class="card-title">Hawkins Edition</h4>
+            <p class="lead card-subtitle">Basic eBook access</p>
+            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+            <p class="card-text mx-5 text-muted d-none d-lg-block">Step into Hawkins and uncover the first eerie clues of the unknown.</p>
+            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              Unlock Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-9 col-lg-4">
+        <div class="card border-primary border-2">
+          <div class="card-header text-center text-primary">Most Chilling</div>
+          <div class="card-body text-center py-5">
+            <h4 class="card-title">Mind Flayer Edition</h4>
+            <p class="lead card-subtitle">Full eBook & lifetime updates</p>
+            <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+            <p class="card-text mx-5 text-muted d-none d-lg-block">Embrace the Upside Down with complete access to hidden knowledge and relentless updates.</p>
+            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              Unlock Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card border-0">
+          <div class="card-body text-center py-4">
+            <h4 class="card-title">Demogorgon Edition</h4>
+            <p class="lead card-subtitle">Full access + secret content</p>
+            <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+            <p class="card-text mx-5 text-muted d-none d-lg-block">Unlock the true terror of the Upside Down with exclusive, secret extras.</p>
+            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              Unlock Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end container -->
+</section>
+
+
+
+  <!-- Topics at a Glance -->
+<section id="topics" class="py-5 bg-light">
+  <div class="container-md">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Inside the Upside Down...</h2>
+      <p class="lead text-muted">A quick glimpse into the mysteries you'll uncover</p>
+    </div>
+    
+    <div class="row g-5 align-items-center">
+      <div class="col-12 col-md-5">
+        <img src="assets/kindleb.jpg" class="img-fluid rounded shadow" alt="Stranger Code eBook">
+      </div>
+      <div class="col-12 col-md-7">
+        <!-- Accordion -->
+        <div class="accordion" id="chapters">
+          <!-- Chapter 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-1">
+                Chapter 1 - Entering the Upside Down
+              </button>
+            </h2>
+            <div id="chapter-1" class="accordion-collapse collapse show" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Unlock the portal with the fundamentals of HTML and build your first gateway into the unknown.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Chapter 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter-2">
+                Chapter 2 - Shadows of CSS
+              </button>
+            </h2>
+            <div id="chapter-2" class="accordion-collapse collapse" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Transform ordinary pages into eerie masterpieces with CSS secrets hidden in the shadows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter-3">
+                Chapter 3 - Awakening the Mind Flayer (JavaScript)
+              </button>
+            </h2>
+            <div id="chapter-3" class="accordion-collapse collapse" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Harness the dynamic power of JavaScript to breathe life into your eerie digital realm.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter-4">
+                Chapter 4 - Secrets of the Other Side (Firebase Databases)
+              </button>
+            </h2>
+            <div id="chapter-4" class="accordion-collapse collapse" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Unlock the mysteries of data storage with Firebase, your gateway to the other realm.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter-5">
+                Chapter 5 - The Gatekeeper Protocol
+              </button>
+            </h2>
+            <div id="chapter-5" class="accordion-collapse collapse" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Fortify your portal with advanced authentication, ensuring only the brave dare to cross over.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- reviews list -->
+<section id="reviews" class="bg-altlight">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2><i class="bi bi-stars text-altdark"></i> Voices from the Upside Down</h2>
+      <p class="lead">What brave souls have said about this portal into the unknown...</p>
+    </div>
+
+    <div class="row justify-content-center my-5">
+      <div class="col-lg-8">
+        <div class="list-group">
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+            </div>
+            <h5 class="mb-1">Mind-blowing! Like Eleven’s powers unleashed in code form</h5>
+            <p class="mb-1">This book opened a portal to a whole new dimension—like stepping into the Upside Down. The secrets are unveiled with clarity, a guiding light in the darkness.</p>
+            <small>Review by Will</small>
+          </div>
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+            </div>
+            <h5 class="mb-1">The perfect guide to outsmarting coding's Demogorgons</h5>
+            <p class="mb-1">Before this book, I was trapped in the darkness, lost amid bugs and errors. Now, I face every coding challenge like a true Hawkins hero!</p>
+            <small>Review by Dustin</small>
+          </div>
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-half text-altdark"></i>
+            </div>
+            <h5 class="mb-1">Hawkins-level genius!</h5>
+            <p class="mb-1">The way this book reveals coding mysteries makes it feel like I have a superpower. Even the scariest bugs are no match for its insights.</p>
+            <small>Review by Max</small>
+          </div>
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+            </div>
+            <h5 class="mb-1">If Hopper cracked code, this would be his manual</h5>
+            <p class="mb-1">No-nonsense, clear, and straight to the point—just like Hopper himself. A must-read for any coder ready to brave the unknown.</p>
+            <small>Review by Lucas</small>
+          </div>
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-fill text-altdark"></i>
+              <i class="bi bi-star-half text-altdark"></i>
+            </div>
+            <h5 class="mb-1">Programming has never felt so otherworldly!</h5>
+            <p class="mb-1">It was like leaping between dimensions—one moment lost in confusion, the next, everything made sense. This book is pure magic from the Upside Down.</p>
+            <small>Review by Eleven</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- contact form -->
+<!-- form-control, form-label, form-select, input-group, input-group-text -->
+<section id="contact">
+  <div class="container-lg">
+    
+    <div class="text-center">
+      <h2>Reach Out to Hawkins</h2>
+      <p class="lead">Have questions about the Upside Down? Fill out the form and send a transmission our way...</p>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div class="col-lg-6">
+        
+        <form>
+          <label for="email" class="form-label">Signal Frequency (Email):</label>
+          <div class="input-group mb-4">
+            <span class="input-group-text">
+              <i class="bi bi-envelope-fill text-secondary"></i>
+            </span>
+            <input type="text" id="email" class="form-control" placeholder="e.g. mike@example.com" />
+            <!-- tooltip -->
+            <span class="input-group-text">
+              <span class="tt" data-bs-placement="bottom" title="Enter an email address so we can send a reply from the other side.">
+                <i class="bi bi-question-circle text-muted"></i>
+              </span>
+            </span>
+          </div>
+          <label for="name" class="form-label">Alias:</label>
+          <div class="mb-4 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-person-fill text-secondary"></i>
+            </span>
+            <input type="text" id="name" class="form-control" placeholder="e.g. Eleven" />
+            <!-- tooltip -->
+            <span class="input-group-text">
+              <span class="tt" data-bs-placement="bottom" title="Your alias in this realm...">
+                <i class="bi bi-question-circle text-muted"></i>
+              </span>
+            </span>
+          </div>
+          <label for="subject" class="form-label">What dimension is your query about?</label>
+          <div class="mb-4 input-group">
+            <span class="input-group-text">
+              <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+            </span>
+            <select class="form-select" id="subject">
+              <option value="pricing" selected>Entry Fee Query</option>
+              <option value="content">Upside Down Content Query</option>
+              <option value="other">Other Transmission</option>
+            </select>
+          </div>
+          <div class="mb-4 mt-5 form-floating">
+            <textarea class="form-control" id="query" placeholder="Your message..."></textarea>
+            <label for="query">Your transmission...</label>
+          </div>
+          <div class="mb-4 text-center">
+            <button type="submit" class="btn btn-secondary">Send Transmission</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Get Updates / Modal Trigger -->
+<section class="bg-dark text-light">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="text-danger">Stay in The Loop</h2>
+      <p class="lead text-light">The Upside Down is shifting… Stay updated before the next anomaly strikes.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="text-muted my-4">Strange forces are at work and the truth is slipping between dimensions. Don't be left in the dark—register now to uncover what lurks in the shadows.</p>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reg-modal">
+          Register for Updates
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="modal-title">Get the Latest Transmissions</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Something strange is coming. Stay alert. Stay prepared.</p>
+        <label for="modal-email" class="form-label text-light">Your signal frequency (email):</label>
+        <input type="text" class="form-control bg-secondary text-light" id="modal-email" placeholder="e.g. mike@hawkinslab.com">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Side Panel / Offcanvas -->
+<div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-danger" id="sidebar-label">Secrets of Hawkins</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>There are files the government wishes to keep hidden. Are you ready to uncover the truth about the Upside Down?</p>
+    <div class="dropdown mt-3">
+      <button class="btn btn-danger dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+        Choose a Classified File
+      </button>
+      <ul class="dropdown-menu bg-dark text-light" aria-labelledby="book-dropdown">
+        <li><a class="dropdown-item text-danger" href="#">Secrets of the Mind Flayer</a></li>
+        <li><a class="dropdown-item text-danger" href="#">Demogorgon Survival Guide</a></li>
+        <li><a class="dropdown-item text-danger" href="#">Eleven’s Hidden Powers</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script>
+  const tooltips = document.querySelectorAll('.tt')
+  tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
+</script>
+</body>
+</html>
