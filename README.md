@@ -104,7 +104,7 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
         errorDocument: "404.html",
     }],
 });
-
+```
 
 
 
