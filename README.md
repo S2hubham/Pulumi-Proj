@@ -1,4 +1,4 @@
-# 2. Project Overview
+# 1. Project Overview
 
 ## Project Title
 **Fast Static Website Deployment with Pulumi**
