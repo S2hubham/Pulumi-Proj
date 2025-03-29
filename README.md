@@ -95,6 +95,8 @@ For a complete view of the deployment code, please refer to the [`index.ts`](./i
 
 ### S3 Bucket & Website Configuration
 This section creates an S3 bucket configured for static website hosting and sets the access level to `public-read`:
+```typescript
+// S3 Bucket & Website Configuration
 const bucket = new aws.s3.BucketV2("my-bucket", {
     acl: "public-read",
     websites: [{
@@ -102,6 +104,7 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
         errorDocument: "404.html",
     }],
 });
+
 
 
 
