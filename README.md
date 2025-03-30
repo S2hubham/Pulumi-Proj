@@ -9,31 +9,34 @@ This project demonstrates a fast static website deployment using AWS S3 and Clou
 > Motivation
 I built this project as part of the Pulumi Deploy and Document Challenge to showcase my cloud engineering skills and demonstrate how modern IaC tools can simplify the deployment process. My focus was on creating a solution that is not only functional and performant, but also well-documented for both technical and non-technical audiences.
 
-
+<p>&nbsp;</p>
+---
 
 
 # 2. Tools & Technologies
 
-> Cloud Provider
+**Cloud Provider**
 - **AWS S3:** Hosting static website assets
 - **AWS CloudFront:** Delivering content with low latency and HTTPS support
 
-> Infrastructure as Code
+**Infrastructure as Code**
 - **Pulumi (TypeScript):** Automating the deployment process
 
-> Web Development
+**Web Development**
 - **HTML, CSS, JavaScript:** Building the static website
 
-> Other Tools
+**Other Tools**
 - **AWS CLI & Git:** For deployment and version control
 - **Diagram Tools:** For creating architecture diagrams (e.g., Draw.io, Figma)
 
+<p>&nbsp;</p>
+---
 
 
 
 # 3. Architecture & Deployment Diagram
 
-**Description:**
+> Description:
 
 The architecture consists of three main components:
 
@@ -41,11 +44,11 @@ The architecture consists of three main components:
 - **AWS S3 Bucket:** Stores the website assets and is configured for static website hosting.
 - **AWS CloudFront Distribution:** Acts as a CDN to serve the website content globally over HTTPS.
 
-**Diagram:**
+> Diagram:
 
 Below is the diagram that illustrates the complete workflow:
 
-![Architecture Diagram](assests/arch.png)
+![Architecture Diagram](assets/arch.png)
 
 *Diagram Explanation:*  
 1. **Local Development:** Code is developed and tested locally.  
@@ -54,29 +57,29 @@ Below is the diagram that illustrates the complete workflow:
 4. **AWS CloudFront Distribution:** CloudFront caches and serves the website content securely over HTTPS to end users.  
 5. **End Users:** Users access the website via the CloudFront URL.
 
-
+<p>&nbsp;</p>
+---
 
 
 # 4. Development & Deployment Journey
 
- Planning and Setup  
+> Planning and Setup  
 I began by outlining the project requirements and selecting the **Static Website Deployment** prompt from the **Pulumi Deploy and Document Challenge**. The initial steps involved:  
 - Setting up a **Git repository**  
 - Creating a **Pulumi account**  
 - Installing the **Pulumi CLI**  
 - Choosing **AWS** as the cloud provider, using **S3** for hosting and **CloudFront** for performance and security.  
 
- Website Development  
+> Website Development  
 The static website was built using **HTML, CSS, and JavaScript**. Key considerations:  
 - Optimized assets (images, fonts, scripts) for **faster delivery**  
 - Ensured **responsive design** across multiple devices  
 - Tested locally to confirm proper functionality before deployment  
 
- Pulumi Integration  
+> Pulumi Integration  
 Transitioning to **Infrastructure as Code (IaC)**, I initialized a **Pulumi project** and wrote a Pulumi script to:  
 - **Provision an S3 bucket** with static website configuration and public-read access  
 - **Set up a CloudFront distribution** to serve content securely over HTTPS  
-
 
 > Challenges & Solutions  
 I encountered challenges while handling **deprecated properties in Pulumi AWS provider** and **configuring ACLs/public access settings**. These were resolved by:  
@@ -89,6 +92,8 @@ The final deployment was executed using:
 pulumi up
 ```
 
+<p>&nbsp;</p>
+---
 
 
 # 5. Code Walkthrough
@@ -107,7 +112,8 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
     }],
 });
 ```
-
+<p>&nbsp;</p>
+---
 
 
 
@@ -131,13 +137,14 @@ Based on the testing feedback, I made minor tweaks to the caching settings and c
 Laptop preview :
 ![Testing Results](assets/window.png)
 
-Mobile preview
+Mobile preview :
 ![Testing Results](assets/mob.jpeg)
 
+<p>&nbsp;</p>
+---
 
 
-
-> 7. Lessons Learned & Future Improvements
+# 7. Lessons Learned & Future Improvements
 
  Lessons Learned
 - **Automation is Key:**  
@@ -155,6 +162,7 @@ Mobile preview
 - **Performance Optimization:**  
   Experiment with advanced CloudFront caching policies and custom SSL certificates for even better performance.
 
+<p>&nbsp;</p>
 ---
 
 
@@ -171,7 +179,7 @@ This project demonstrates a robust approach to deploying a static website using 
 - **Detailed Blog Post:**  
   For a deeper dive into my process and challenges, read my blog post on Medium: [Dev Blog Link]()
 
-
+<p>&nbsp;</p>
 ---
 
 
@@ -180,6 +188,8 @@ This project demonstrates a robust approach to deploying a static website using 
 # 9. Links & References
 
 - **Live Site:** [CloudFront URL](https://d31g1hox7ufl5t.cloudfront.net)
-- **GitHub Repository:** [Link to Repo](https://github.com/S2hubham/Pulumi-Proj)
 - **Pulumi Documentation:** [Pulumi Docs](https://www.pulumi.com/docs/)
 - **AWS S3 & CloudFront:** [AWS Documentation](https://aws.amazon.com/documentation/)
+
+
+Finally! Thank U Dev community for this amazing challenge, learned some new things <-_->
