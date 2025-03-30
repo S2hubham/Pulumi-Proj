@@ -1,2 +1,4 @@
 /node_modules
 pulumi/node_modules
+pulumi/Pulumi.shubh.yaml
+pulumi/package-lock.json
