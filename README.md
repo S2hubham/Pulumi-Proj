@@ -91,11 +91,23 @@ I encountered challenges while handling **deprecated properties in Pulumi AWS pr
 - Adjusting **S3 bucket settings**  
 - Implementing `BucketPublicAccessBlock` to allow controlled public access  
 
- Deployment  
+> Deployment 
+
 The final deployment was executed using: 
+
+```
+pulumi preview
+//Preview first to verify changes.
+```
+
+![](assets/preview.png)
+
 ``` 
 pulumi up
+Deploy when you're ready to apply them.
 ```
+
+![](assets/up.png)
 
 <p>&nbsp;</p>
 
