@@ -10,7 +10,7 @@ This project demonstrates a fast static website deployment using AWS S3 and Clou
 I built this project as part of the Pulumi Deploy and Document Challenge to showcase my cloud engineering skills and demonstrate how modern IaC tools can simplify the deployment process. My focus was on creating a solution that is not only functional and performant, but also well-documented for both technical and non-technical audiences.
 
 <p>&nbsp;</p>
----
+
 
 
 # 2. Tools & Technologies
@@ -30,7 +30,7 @@ I built this project as part of the Pulumi Deploy and Document Challenge to show
 - **Diagram Tools:** For creating architecture diagrams (e.g., Draw.io, Figma)
 
 <p>&nbsp;</p>
----
+
 
 
 
@@ -58,7 +58,7 @@ Below is the diagram that illustrates the complete workflow:
 5. **End Users:** Users access the website via the CloudFront URL.
 
 <p>&nbsp;</p>
----
+
 
 
 # 4. Development & Deployment Journey
@@ -93,7 +93,7 @@ pulumi up
 ```
 
 <p>&nbsp;</p>
----
+
 
 
 # 5. Code Walkthrough
@@ -113,7 +113,7 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
 });
 ```
 <p>&nbsp;</p>
----
+
 
 
 
@@ -141,7 +141,7 @@ Mobile preview :
 ![Testing Results](assets/mob.jpeg)
 
 <p>&nbsp;</p>
----
+
 
 
 # 7. Lessons Learned & Future Improvements
@@ -163,7 +163,7 @@ Mobile preview :
   Experiment with advanced CloudFront caching policies and custom SSL certificates for even better performance.
 
 <p>&nbsp;</p>
----
+
 
 
 
@@ -180,7 +180,6 @@ This project demonstrates a robust approach to deploying a static website using 
   For a deeper dive into my process and challenges, read my blog post on Medium: [Dev Blog Link]()
 
 <p>&nbsp;</p>
----
 
 
 
@@ -191,5 +190,14 @@ This project demonstrates a robust approach to deploying a static website using 
 - **Pulumi Documentation:** [Pulumi Docs](https://www.pulumi.com/docs/)
 - **AWS S3 & CloudFront:** [AWS Documentation](https://aws.amazon.com/documentation/)
 
+<p>&nbsp;</p>
 
-Finally! Thank U Dev community for this amazing challenge, learned some new things <-_->
+# 🚀 Finally! Thank U Dev Community! 🎉
+
+<p align="center">
+  <img src="https://media.giphy.com/media/E6jsc2uR91eMg/giphy.gif" width="200">
+</p>
+
+### 💡 Learned some new things! 🤓
+
+Thanks for this amazing challenge! 🔥
