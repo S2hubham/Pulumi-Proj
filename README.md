@@ -204,6 +204,8 @@ This project demonstrates a robust approach to deploying a static website using 
 - **Live Site:** [CloudFront URL](https://d31g1hox7ufl5t.cloudfront.net)
 - **Pulumi Documentation:** [Pulumi Docs](https://www.pulumi.com/docs/)
 - **AWS S3 & CloudFront:** [AWS Documentation](https://aws.amazon.com/documentation/)
+- **Laptop preview:** [Laptop testing](https://www.youtube.com/watch?v=Fs2whcavQVM)
+- **Mobile preview:** [Mobile testing](https://www.youtube.com/watch?v=XwaOJpXrzUA)
 
 <p>&nbsp;</p>
 
