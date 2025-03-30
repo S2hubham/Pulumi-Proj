@@ -1,12 +1,15 @@
 # 1. Project Overview
 
-> Project Title
+## Project Title
+
 **Fast Static Website Deployment with Pulumi**
 
 > Overview
+
 This project demonstrates a fast static website deployment using AWS S3 and CloudFront, orchestrated through Pulumi’s Infrastructure as Code (IaC) platform. The goal is to build a fully automated, globally distributed website hosting solution using HTML, CSS, and JavaScript for the frontend, while leveraging Pulumi to streamline the deployment process. The project addresses challenges such as configuring public access for static assets and integrating a CDN for performance and security improvements.
 
 > Motivation
+
 I built this project as part of the Pulumi Deploy and Document Challenge to showcase my cloud engineering skills and demonstrate how modern IaC tools can simplify the deployment process. My focus was on creating a solution that is not only functional and performant, but also well-documented for both technical and non-technical audiences.
 
 <p>&nbsp;</p>
@@ -63,25 +66,29 @@ Below is the diagram that illustrates the complete workflow:
 
 # 4. Development & Deployment Journey
 
-> Planning and Setup  
+> Planning and Setup 
+
 I began by outlining the project requirements and selecting the **Static Website Deployment** prompt from the **Pulumi Deploy and Document Challenge**. The initial steps involved:  
 - Setting up a **Git repository**  
 - Creating a **Pulumi account**  
 - Installing the **Pulumi CLI**  
 - Choosing **AWS** as the cloud provider, using **S3** for hosting and **CloudFront** for performance and security.  
 
-> Website Development  
+> Website Development
+
 The static website was built using **HTML, CSS, and JavaScript**. Key considerations:  
 - Optimized assets (images, fonts, scripts) for **faster delivery**  
 - Ensured **responsive design** across multiple devices  
 - Tested locally to confirm proper functionality before deployment  
 
 > Pulumi Integration  
+
 Transitioning to **Infrastructure as Code (IaC)**, I initialized a **Pulumi project** and wrote a Pulumi script to:  
 - **Provision an S3 bucket** with static website configuration and public-read access  
 - **Set up a CloudFront distribution** to serve content securely over HTTPS  
 
 > Challenges & Solutions  
+
 I encountered challenges while handling **deprecated properties in Pulumi AWS provider** and **configuring ACLs/public access settings**. These were resolved by:  
 - Adjusting **S3 bucket settings**  
 - Implementing `BucketPublicAccessBlock` to allow controlled public access  
@@ -100,7 +107,8 @@ pulumi up
 
 For a complete view of the deployment code, please refer to the [`index.ts`](./index.ts) file in this repository. Below, I highlight the key sections of the code and explain their purpose.
 
- S3 Bucket & Website Configuration
+> S3 Bucket & Website Configuration
+
 This section creates an S3 bucket configured for static website hosting and sets the access level to `public-read`:
 ```typescript
 // S3 Bucket & Website Configuration
@@ -134,10 +142,13 @@ After deployment, I conducted extensive testing to ensure the website's function
 **Adjustments:**  
 Based on the testing feedback, I made minor tweaks to the caching settings and confirmed that the website loaded without errors (e.g., resolving previous 403 Forbidden issues).
 
+
 Laptop preview :
+
 ![Testing Results](assets/window.png)
 
 Mobile preview :
+
 ![Testing Results](assets/mob.jpeg)
 
 <p>&nbsp;</p>
@@ -170,10 +181,12 @@ Mobile preview :
 
 # 8. Conclusion & Next Steps
 
- Conclusion
+> Conclusion
+
 This project demonstrates a robust approach to deploying a static website using modern cloud infrastructure tools. Leveraging AWS S3, CloudFront, and Pulumi, the deployment process was automated and optimized for both performance and security. This submission is a testament to how Infrastructure as Code can simplify and enhance the deployment workflow.
 
- Next Steps
+> Next Steps
+
 - **Live Site:**  
   Check out the live site here: [CloudFront URL](https://d31g1hox7ufl5t.cloudfront.net)
 - **Detailed Blog Post:**  
@@ -195,7 +208,7 @@ This project demonstrates a robust approach to deploying a static website using 
 # 🚀 Finally! Thank U Dev Community! 🎉
 
 <p align="center">
-  <img src="https://media.giphy.com/media/E6jsc2uR91eMg/giphy.gif" width="200">
+  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="200">
 </p>
 
 ### 💡 Learned some new things! 🤓
