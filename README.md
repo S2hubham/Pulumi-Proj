@@ -95,21 +95,23 @@ I encountered challenges while handling **deprecated properties in Pulumi AWS pr
 
 The final deployment was executed using: 
 
+1.Preview first to verify changes.
+
 ```
 pulumi preview
-//Preview first to verify changes.
 ```
 
 ![](assets/preview.png)
 
 <p>&nbsp;</p>
 
+2.Deploy when you're ready to apply them.
+
 ``` 
 pulumi up
-//Deploy when you're ready to apply them.
 ```
 
-![pulumi up o/p](assets/up.png)
+![](assets/up.png)
 
 <p>&nbsp;</p>
 
