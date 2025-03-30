@@ -1,8 +1,6 @@
 # 1. Project Overview
 
-## Project Title
-
-**Fast Static Website Deployment with Pulumi**
+## Project Title **Fast Static Website Deployment with Pulumi**
 
 > Overview
 
@@ -127,7 +125,8 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
 
 # 6. Testing & Final Adjustments
 
-**Testing:**  
+>Testing: 
+
 After deployment, I conducted extensive testing to ensure the website's functionality, performance, and security:
 
 - **Device Testing:**  
@@ -139,7 +138,8 @@ After deployment, I conducted extensive testing to ensure the website's function
 - **Security Review:**  
   I reviewed the S3 bucket and CloudFront configurations to confirm that the appropriate public access policies were in place, minimizing any security risks while allowing public access.
 
-**Adjustments:**  
+>Adjustments:
+
 Based on the testing feedback, I made minor tweaks to the caching settings and confirmed that the website loaded without errors (e.g., resolving previous 403 Forbidden issues).
 
 
@@ -157,7 +157,8 @@ Mobile preview :
 
 # 7. Lessons Learned & Future Improvements
 
- Lessons Learned
+> Lessons Learned
+
 - **Automation is Key:**  
   Automating infrastructure deployment with Pulumi greatly reduces manual configuration errors.
 - **Attention to Detail:**  
@@ -165,7 +166,8 @@ Mobile preview :
 - **Iterative Testing:**  
   Continuous testing across devices helped catch issues early.
 
- Future Improvements
+> Future Improvements
+
 - **CI/CD Pipeline:**  
   Integrate a continuous deployment process to automate future updates.
 - **Enhanced Security:**  
