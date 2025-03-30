@@ -1,12 +1,12 @@
 # 1. Project Overview
 
-## Project Title
+> Project Title
 **Fast Static Website Deployment with Pulumi**
 
-## Overview
+> Overview
 This project demonstrates a fast static website deployment using AWS S3 and CloudFront, orchestrated through Pulumi’s Infrastructure as Code (IaC) platform. The goal is to build a fully automated, globally distributed website hosting solution using HTML, CSS, and JavaScript for the frontend, while leveraging Pulumi to streamline the deployment process. The project addresses challenges such as configuring public access for static assets and integrating a CDN for performance and security improvements.
 
-## Motivation
+> Motivation
 I built this project as part of the Pulumi Deploy and Document Challenge to showcase my cloud engineering skills and demonstrate how modern IaC tools can simplify the deployment process. My focus was on creating a solution that is not only functional and performant, but also well-documented for both technical and non-technical audiences.
 
 
@@ -14,17 +14,17 @@ I built this project as part of the Pulumi Deploy and Document Challenge to show
 
 # 2. Tools & Technologies
 
-## Cloud Provider
+> Cloud Provider
 - **AWS S3:** Hosting static website assets
 - **AWS CloudFront:** Delivering content with low latency and HTTPS support
 
-## Infrastructure as Code
+> Infrastructure as Code
 - **Pulumi (TypeScript):** Automating the deployment process
 
-## Web Development
+> Web Development
 - **HTML, CSS, JavaScript:** Building the static website
 
-## Other Tools
+> Other Tools
 - **AWS CLI & Git:** For deployment and version control
 - **Diagram Tools:** For creating architecture diagrams (e.g., Draw.io, Figma)
 
@@ -45,7 +45,7 @@ The architecture consists of three main components:
 
 Below is the diagram that illustrates the complete workflow:
 
-![Architecture Diagram](path/to/your/diagram.png)
+![Architecture Diagram](assests/arch.png)
 
 *Diagram Explanation:*  
 1. **Local Development:** Code is developed and tested locally.  
@@ -59,33 +59,35 @@ Below is the diagram that illustrates the complete workflow:
 
 # 4. Development & Deployment Journey
 
-### Planning and Setup  
+ Planning and Setup  
 I began by outlining the project requirements and selecting the **Static Website Deployment** prompt from the **Pulumi Deploy and Document Challenge**. The initial steps involved:  
 - Setting up a **Git repository**  
 - Creating a **Pulumi account**  
 - Installing the **Pulumi CLI**  
 - Choosing **AWS** as the cloud provider, using **S3** for hosting and **CloudFront** for performance and security.  
 
-### Website Development  
+ Website Development  
 The static website was built using **HTML, CSS, and JavaScript**. Key considerations:  
 - Optimized assets (images, fonts, scripts) for **faster delivery**  
 - Ensured **responsive design** across multiple devices  
 - Tested locally to confirm proper functionality before deployment  
 
-### Pulumi Integration  
+ Pulumi Integration  
 Transitioning to **Infrastructure as Code (IaC)**, I initialized a **Pulumi project** and wrote a Pulumi script to:  
 - **Provision an S3 bucket** with static website configuration and public-read access  
 - **Set up a CloudFront distribution** to serve content securely over HTTPS  
 
-#### Challenges & Solutions  
+
+> Challenges & Solutions  
 I encountered challenges while handling **deprecated properties in Pulumi AWS provider** and **configuring ACLs/public access settings**. These were resolved by:  
 - Adjusting **S3 bucket settings**  
 - Implementing `BucketPublicAccessBlock` to allow controlled public access  
 
-### Deployment  
-The final deployment was executed using:  
+ Deployment  
+The final deployment was executed using: 
+``` 
 pulumi up
-
+```
 
 
 
@@ -93,7 +95,7 @@ pulumi up
 
 For a complete view of the deployment code, please refer to the [`index.ts`](./index.ts) file in this repository. Below, I highlight the key sections of the code and explain their purpose.
 
-### S3 Bucket & Website Configuration
+ S3 Bucket & Website Configuration
 This section creates an S3 bucket configured for static website hosting and sets the access level to `public-read`:
 ```typescript
 // S3 Bucket & Website Configuration
@@ -126,16 +128,18 @@ After deployment, I conducted extensive testing to ensure the website's function
 **Adjustments:**  
 Based on the testing feedback, I made minor tweaks to the caching settings and confirmed that the website loaded without errors (e.g., resolving previous 403 Forbidden issues).
 
-[STOP: Insert any test result screenshots, browser testing results, or performance metrics here.]
+Laptop preview :
+![Testing Results](assets/window.png)
 
-**INSERT TESTING SCREENSHOTS HERE**
+Mobile preview
+![Testing Results](assets/mob.jpeg)
 
 
 
 
-## 7. Lessons Learned & Future Improvements
+> 7. Lessons Learned & Future Improvements
 
-### Lessons Learned
+ Lessons Learned
 - **Automation is Key:**  
   Automating infrastructure deployment with Pulumi greatly reduces manual configuration errors.
 - **Attention to Detail:**  
@@ -143,7 +147,7 @@ Based on the testing feedback, I made minor tweaks to the caching settings and c
 - **Iterative Testing:**  
   Continuous testing across devices helped catch issues early.
 
-### Future Improvements
+ Future Improvements
 - **CI/CD Pipeline:**  
   Integrate a continuous deployment process to automate future updates.
 - **Enhanced Security:**  
@@ -158,16 +162,15 @@ Based on the testing feedback, I made minor tweaks to the caching settings and c
 
 # 8. Conclusion & Next Steps
 
-### Conclusion
+ Conclusion
 This project demonstrates a robust approach to deploying a static website using modern cloud infrastructure tools. Leveraging AWS S3, CloudFront, and Pulumi, the deployment process was automated and optimized for both performance and security. This submission is a testament to how Infrastructure as Code can simplify and enhance the deployment workflow.
 
-### Next Steps
+ Next Steps
 - **Live Site:**  
   Check out the live site here: [CloudFront URL](https://d31g1hox7ufl5t.cloudfront.net)
 - **Detailed Blog Post:**  
-  For a deeper dive into my process and challenges, read my blog post on Medium: [Insert Blog Link]
-- **Feedback:**  
-  I welcome any feedback or suggestions for further improvements.
+  For a deeper dive into my process and challenges, read my blog post on Medium: [Dev Blog Link]()
+
 
 ---
 
