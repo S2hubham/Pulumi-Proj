@@ -102,12 +102,14 @@ pulumi preview
 
 ![](assets/preview.png)
 
+<p>&nbsp;</p>
+
 ``` 
 pulumi up
-Deploy when you're ready to apply them.
+//Deploy when you're ready to apply them.
 ```
 
-![](assets/up.png)
+![pulumi up o/p](assets/up.png)
 
 <p>&nbsp;</p>
 
