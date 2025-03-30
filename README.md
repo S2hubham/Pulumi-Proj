@@ -208,7 +208,7 @@ This project demonstrates a robust approach to deploying a static website using 
 - **Live Site:**  
   Check out the live site here: [CloudFront URL](https://d31g1hox7ufl5t.cloudfront.net)
 - **Detailed Blog Post:**  
-  For a deeper dive into my process and challenges, read my blog post on Medium: [Dev Blog Link]()
+  For a deeper dive into my process and challenges, read my blog post on Medium: [Dev Blog Link](https://dev.to/shubham_kokane_1bd2fa4d20/pulumi-deploy-and-document-challenge-fast-static-website-deployment-522f)
 
 <p>&nbsp;</p>
 
