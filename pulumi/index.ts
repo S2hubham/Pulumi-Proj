@@ -1,7 +1,7 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as aws from "@pulumi/aws";
 
-// Create an S3 bucket with website configuration enabled and public-read ACL
+
 const bucket = new aws.s3.BucketV2("my-bucket", {
     acl: "public-read",
     websites: [{
@@ -10,7 +10,7 @@ const bucket = new aws.s3.BucketV2("my-bucket", {
     }],
 });
 
-// Disable block public access that would prevent public ACLs
+
 const publicAccessBlock = new aws.s3.BucketPublicAccessBlock("myBucketPublicAccess", {
     bucket: bucket.id,
     blockPublicAcls: false,
@@ -19,19 +19,19 @@ const publicAccessBlock = new aws.s3.BucketPublicAccessBlock("myBucketPublicAcce
     restrictPublicBuckets: false,
 });
 
-// Create a CloudFront distribution to serve the website
+
 const originId = "S3-my-bucket";
 
-// Note: Since we're using the S3 website endpoint, we need to use custom origin config.
+
 const distribution = new aws.cloudfront.Distribution("cdn", {
     enabled: true,
     origins: [{
-        domainName: bucket.websiteEndpoint, // S3 website endpoint (HTTP-only)
+        domainName: bucket.websiteEndpoint, 
         originId: originId,
         customOriginConfig: {
             httpPort: 80,
             httpsPort: 443,
-            originProtocolPolicy: "http-only",  // S3 website endpoints support HTTP only
+            originProtocolPolicy: "http-only",  
             originSslProtocols: ["TLSv1.2"],
         },
     }],
@@ -46,9 +46,9 @@ const distribution = new aws.cloudfront.Distribution("cdn", {
         },
     },
     defaultRootObject: "index.html",
-    priceClass: "PriceClass_100",  // Covers US, Canada, and Europe
+    priceClass: "PriceClass_100",  
     viewerCertificate: {
-        cloudfrontDefaultCertificate: true,  // Using CloudFront's default cert for HTTPS
+        cloudfrontDefaultCertificate: true,  
     },
     restrictions: {
         geoRestriction: {
@@ -57,7 +57,7 @@ const distribution = new aws.cloudfront.Distribution("cdn", {
     },
 });
 
-// Export outputs for reference
+
 export const bucketName = bucket.id;
 export const websiteUrl = bucket.websiteEndpoint;
 export const cdnUrl = distribution.domainName;
